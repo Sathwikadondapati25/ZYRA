@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zyra – AI-Powered Branding Automation</title>
+    <meta
+      name="description"
+      content="Zyra is an AI-powered branding automation platform that helps startups and creators generate brand names, logos, content, and insights in minutes."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__logo">
+        <span class="nav__logo-mark">Z</span>
+        <span class="nav__logo-text">Zyra</span>
+      </div>
+      <nav class="nav__links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#tech">Architecture</a>
+        <a href="#assistant">Branding Assistant</a>
+      </nav>
+      <button class="nav__cta" onclick="scrollToSection('try-zyra')">
+        Try Zyra
+      </button>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1>
+            Build a complete brand
+            <span class="hero__highlight">in minutes</span>, not months.
+          </h1>
+          <p class="hero__subtitle">
+            Zyra is an AI-powered branding automation system that helps
+            startups, small businesses, and creators generate names, logos,
+            content, and sentiment insights in one place.
+          </p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" onclick="scrollToSection('try-zyra')">
+              Get started – it’s instant
+            </button>
+            <button class="btn btn--ghost" onclick="scrollToSection('features')">
+              Explore features
+            </button>
+          </div>
+          <div class="hero__meta">
+            <span>End-to-end branding</span>
+            <span>Multimodal AI (text + image)</span>
+            <span>Ethical & inclusive by design</span>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="hero-card">
+            <h2>Brand Blueprint Preview</h2>
+            <p class="hero-card__label">Generated with Zyra</p>
+            <div id="brand-preview" class="hero-card__preview">
+              <h3>Alora Studio</h3>
+              <p class="hero-card__pill">Industry: Creative Tech</p>
+              <p class="hero-card__pill">Values: Innovation · Inclusivity</p>
+              <p>
+                A bold, human-first brand that blends generative AI with
+                storytelling to help creators launch memorable ideas.
+              </p>
+              <div class="hero-card__tags">
+                <span>Brand Personality: Explorer</span>
+                <span>Sentiment: Positive</span>
+                <span>Ready for: Social · Web · Pitch deck</span>
+              </div>
+            </div>
+            <p class="hero-card__hint">
+              Fill in the form below to see your own brand blueprint.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="section section--alt">
+        <div class="section__header">
+          <h2>Why Zyra is different</h2>
+          <p>
+            Not just a logo generator. Zyra orchestrates name, visuals, content,
+            and audience insight into a single, adaptive branding experience.
+          </p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>End-to-end branding</h3>
+            <p>
+              Generate brand names, taglines, logos, visual directions, and
+              campaign-ready content in a single workflow.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Multimodal brand engine</h3>
+            <p>
+              Use text and image models together so your tone of voice and
+              visuals always feel like they belong to the same brand.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Brand Personality Engine</h3>
+            <p>
+              Map your brand to psychological archetypes to create deeper,
+              emotional connections with your target audience.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Real-time trend awareness</h3>
+            <p>
+              Analyze social sentiment and competitor positioning via embeddings
+              to keep your brand future-ready and relevant.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Ethical & inclusive by default</h3>
+            <p>
+              Automatically check for biased, stereotypical, or culturally
+              insensitive content before it goes live.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Built for lean teams</h3>
+            <p>
+              Give startups and small businesses agency-level branding without
+              agency-level costs or timelines.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section id="how-it-works" class="section">
+        <div class="section__header">
+          <h2>How Zyra works</h2>
+          <p>From a few inputs to a living, data-informed brand system.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step__number">1</span>
+            <div>
+              <h3>Describe your brand</h3>
+              <p>
+                Enter your industry, audience, values, and style. Zyra uses this
+                as the foundation for your brand identity.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__number">2</span>
+            <div>
+              <h3>Generate identity & assets</h3>
+              <p>
+                Zyra proposes names, taglines, visual directions, and content
+                while aligning everything with a chosen brand personality.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step__number">3</span>
+            <div>
+              <h3>Refine and deploy</h3>
+              <p>
+                Use sentiment and trend analysis to refine messaging, then
+                export assets and campaign plans across your channels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical architecture -->
+      <section id="tech" class="section section--alt">
+        <div class="section__header">
+          <h2>Technical architecture</h2>
+          <p>
+            Designed for scalability, security, and real-time AI-assisted
+            branding.
+          </p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card card--compact">
+            <h3>Backend</h3>
+            <p>
+              FastAPI (Python) orchestrates AI workflows and exposes APIs for
+              branding, trend analysis, and sentiment insights.
+            </p>
+          </article>
+          <article class="card card--compact">
+            <h3>Frontend</h3>
+            <p>
+              React-based web client (HTML, CSS, JS) provides an intuitive
+              interface for configuring and refining brand identities.
+            </p>
+          </article>
+          <article class="card card--compact">
+            <h3>AI models</h3>
+            <p>
+              Hugging Face / Azure OpenAI for text and sentiment; Stable
+              Diffusion / RunwayML for logo and visual concept generation.
+            </p>
+          </article>
+          <article class="card card--compact">
+            <h3>Trend & competitor analysis</h3>
+            <p>
+              LangChain + Pinecone for storing and querying embeddings of social
+              and competitor data in real time.
+            </p>
+          </article>
+          <article class="card card--compact">
+            <h3>Brand dashboards</h3>
+            <p>
+              D3.js visualizations for sentiment over time, content performance,
+              and competitive positioning.
+            </p>
+          </article>
+          <article class="card card--compact">
+            <h3>Cloud deployment</h3>
+            <p>
+              Runs on IBM Cloud or Azure with support for secure, multi-tenant
+              access and future enterprise integrations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Branding assistant demo -->
+      <section id="assistant" class="section">
+        <div class="section__header">
+          <h2>Branding assistant preview</h2>
+          <p>
+            Enter a few details and see how Zyra could summarize your brand
+            direction. (Demo only – no data is sent to a server here.)
+          </p>
+        </div>
+        <div id="try-zyra" class="assistant">
+          <form id="brand-form" class="form">
+            <div class="form__row">
+              <div class="form__field">
+                <label for="industry">Industry</label>
+                <input
+                  type="text"
+                  id="industry"
+                  name="industry"
+                  placeholder="e.g., Fintech, EdTech, Wellness"
+                  required
+                />
+              </div>
+              <div class="form__field">
+                <label for="audience">Target audience</label>
+                <input
+                  type="text"
+                  id="audience"
+                  name="audience"
+                  placeholder="e.g., early-stage founders, Gen Z creators"
+                />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__field">
+                <label for="values">Core values</label>
+                <input
+                  type="text"
+                  id="values"
+                  name="values"
+                  placeholder="e.g., transparency, inclusivity, innovation"
+                />
+              </div>
+              <div class="form__field">
+                <label for="style">Brand style</label>
+                <input
+                  type="text"
+                  id="style"
+                  name="style"
+                  placeholder="e.g., bold, playful, minimal, premium"
+                />
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label for="goal">Primary brand goal</label>
+              <textarea
+                id="goal"
+                name="goal"
+                rows="3"
+                placeholder="e.g., Help new founders trust our platform and feel confident launching with us."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__submit">
+              Generate demo brand summary
+            </button>
+            <p class="form__note">
+              This is a front-end only demo for presentation purposes. In
+              production, this form would connect to Zyra’s FastAPI backend and
+              AI pipelines.
+            </p>
+          </form>
+
+          <aside class="assistant__output">
+            <h3>Your demo brand summary</h3>
+            <div id="assistant-output" class="assistant__output-box">
+              <p>
+                Fill in the form on the left to see a sample brand direction
+                that Zyra could create for you.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p>Alora · Zyra – AI-Powered Branding Automation</p>
+        <p class="footer__meta">
+          Built to help startups launch impactful, inclusive brands faster.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
